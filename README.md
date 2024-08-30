@@ -3,6 +3,7 @@ Fireball-12B and others model cookbook
 
 <img src="https://huggingface.co/EpistemeAI/Fireball-Mistral-Nemo-Base-2407-v1-DPO2/resolve/main/fireball.JPG" width="200"/>
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<a href="[[https://ko-fi.com/unsloth](https://ko-fi.com/epistemeai)](https://ko-fi.com/epistemeai)">Please support and donate</a>
 
 # Fireball-12B
 This model is super fine-tune to provide better coding and better response(from first fine-tune) than Llama-3.1-8B and Google Gemma 2 9B. 
@@ -113,4 +114,4 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 This mistral model was trained 2x faster with [Unsloth](https://github.com/unslothai/unsloth) and Huggingface's TRL library.
 [<img src="https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth%20made%20with%20love.png" width="200"/>](https://github.com/unslothai/unsloth)
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'C0C8127LWN');kofiwidget2.draw();</script> 
+
