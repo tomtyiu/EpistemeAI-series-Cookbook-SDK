@@ -2,7 +2,6 @@
 Fireball-12B and others model cookbook
 
 <img src="https://huggingface.co/EpistemeAI/Fireball-Mistral-Nemo-Base-2407-v1-DPO2/resolve/main/fireball.JPG" width="200"/>
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <a href="https://ko-fi.com/epistemeai">>Please support and donate></a>
 
 # Fireball-12B
