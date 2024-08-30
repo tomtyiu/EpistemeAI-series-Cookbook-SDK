@@ -3,7 +3,7 @@ Fireball-12B and others model cookbook
 
 <img src="https://huggingface.co/EpistemeAI/Fireball-Mistral-Nemo-Base-2407-v1-DPO2/resolve/main/fireball.JPG" width="200"/>
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<a href="[[https://ko-fi.com/unsloth](https://ko-fi.com/epistemeai)](https://ko-fi.com/epistemeai)">Please support and donate</a>
+<a href="https://ko-fi.com/epistemeai">>Please support and donate></a>
 
 # Fireball-12B
 This model is super fine-tune to provide better coding and better response(from first fine-tune) than Llama-3.1-8B and Google Gemma 2 9B. 
