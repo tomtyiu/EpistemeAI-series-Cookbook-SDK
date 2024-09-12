@@ -62,6 +62,6 @@ For guardrailing and moderating prompts against indirect/direct prompt injection
 ## Note
 `EpistemeAI/Fireball-12B` is a pretrained base model and therefore does not have any moderation mechanisms. Go to Guardrail/Moderation guide section for moderation guide
 
-
+```
 
 
