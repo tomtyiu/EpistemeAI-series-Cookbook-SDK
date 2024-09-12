@@ -98,22 +98,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 > Unlike previous Mistral models, Mistral Nemo requires smaller temperatures. We recommend to use a temperature of 0.3.
 ## Note
 `EpistemeAI/Fireball-12B` is a pretrained base model and therefore does not have any moderation mechanisms. Go to Guardrail/Moderation guide section for moderation guide
-### Citation for yahma/alpaca-cleaned dataset
-```
-@misc{alpaca,
-  author = {Rohan Taori and Ishaan Gulrajani and Tianyi Zhang and Yann Dubois and Xuechen Li and Carlos Guestrin and Percy Liang and Tatsunori B. Hashimoto },
-  title = {Stanford Alpaca: An Instruction-following LLaMA model},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/tatsu-lab/stanford_alpaca}},
-}
-```
-# Uploaded  model
-- **Developed by:** EpistemeAI
-- **License:** apache-2.0
-- **Finetuned from model :** EpistemeAI/Fireball-Mistral-Nemo-Base-2407-sft-v2.2a
-This mistral model was trained 2x faster with [Unsloth](https://github.com/unslothai/unsloth) and Huggingface's TRL library.
-[<img src="https://raw.githubusercontent.com/unslothai/unsloth/main/images/unsloth%20made%20with%20love.png" width="200"/>](https://github.com/unslothai/unsloth)
+
+
 
 
