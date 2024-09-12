@@ -50,11 +50,11 @@ For guardrailing and moderating prompts against indirect/direct prompt injection
 
 # programming languages
 
-## Langchain: Please go to langchain to use our Fireball series in langchain
+### Langchain: Please go to langchain to use our Fireball series in langchain
 
-## llamaindex: please go to llamaindex to use our Fireball series in llamaindex
+### llamaindex: please go to llamaindex to use our Fireball series in llamaindex
 
-## vllm: please go to vllm to uses our Fireball series in vllm
+### vllm: please go to vllm to uses our Fireball series in vllm
 
 ```
 > [!TIP]
