@@ -48,51 +48,14 @@ Mistral Nemo is a transformer model, with the following architecture choices:
 For guardrailing and moderating prompts against indirect/direct prompt injections and jailbreaking, please follow the SentinelShield AI GitHub repository:
 [SentinelShield AI](https://github.com/tomtyiu/SentinelShieldAI)
 
+# programming languages
 
-#### Demo
+## Langchain: Please go to langchain to use our Fireball series in langchain
 
-After installing `mistral_inference`, a `mistral-demo` CLI command should be available in your environment.
+## llamaindex: please go to llamaindex to use our Fireball series in llamaindex
 
-### Transformers
+## vllm: please go to vllm to uses our Fireball series in vllm
 
-> [!IMPORTANT]
-> NOTE: Until a new release has been made, you need to install transformers from source:
-> ```sh
-> pip install mistral_inference
-> pip install mistral-demo
-> pip install git+https://github.com/huggingface/transformers.git
-> ```
-If you want to use Hugging Face `transformers` to generate text, you can do something like this.
-```py
-from transformers import AutoModelForCausalLM, AutoTokenizer
-model_id = "EpistemeAI/Fireball-12B"
-tokenizer = AutoTokenizer.from_pretrained(model_id)
-model = AutoModelForCausalLM.from_pretrained(model_id)
-inputs = tokenizer("Hello my name is", return_tensors="pt")
-outputs = model.generate(**inputs, max_new_tokens=20)
-print(tokenizer.decode(outputs[0], skip_special_tokens=True))
-```
-## Accelerator mode: 
-```py
-pip install accelerate #GPU A100/L4
-from transformers import AutoModelForCausalLM, AutoTokenizer
-from accelerate import Accelerator
-# Initialize the accelerator
-accelerator = Accelerator()
-# Define the model ID
-model_id = "EpistemeAI/Fireball-12B"
-# Load the tokenizer
-tokenizer = AutoTokenizer.from_pretrained(model_id)
-# Load the model and prepare it for distributed setup using accelerate
-model = AutoModelForCausalLM.from_pretrained(model_id)
-# Move the model to the appropriate device using accelerate
-model, = accelerator.prepare(model)
-# Prepare inputs
-inputs = tokenizer("Hello my name is", return_tensors="pt").to(accelerator.device)
-# Generate outputs with the model
-outputs = model.generate(**inputs, max_new_tokens=20)
-# Decode and print the outputs
-print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ```
 > [!TIP]
 > Unlike previous Mistral models, Mistral Nemo requires smaller temperatures. We recommend to use a temperature of 0.3.
