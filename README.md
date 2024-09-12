@@ -12,37 +12,6 @@ Further fine tuned with ORPO method with dataset
 # Fireball-Llama3.1-8B
 Model is fine tuned using sft technique.  
 
-# Benchmark
-<img src="https://huggingface.co/EpistemeAI/Fireball-12B/resolve/main/benchmark2.jpg"/>
-## Training Dataset 
-Supervised fine-tuning with dataset: 
-- candenizkocak/code-alpaca-297k
-- yahma/alpaca-cleaned
-
-# Model Card for Fireball-12B
-
-The Heavy fine-tuned Mistral-Nemo-Base-2407 Large Language Model (LLM) is a pretrained generative text model of 12B parameters trained jointly by Mistral AI and NVIDIA, it significantly outperforms existing models smaller or similar in size.
-
-For more details about this model please refer to our release [blog post](https://mistral.ai/news/mistral-nemo/).
-
-## Key features
-- Released under the **Apache 2 License**
-- Pre-trained and instructed versions
-- Trained with a **128k context window**
-- Trained on a large proportion of **multilingual and code data**
-- Drop-in replacement of Mistral 7B
-
-## Model Architecture
-Mistral Nemo is a transformer model, with the following architecture choices:
-- **Layers:** 40
-- **Dim:** 5,120
-- **Head dim:** 128
-- **Hidden dim:** 14,436
-- **Activation Function:** SwiGLU
-- **Number of heads:** 32
-- **Number of kv-heads:** 8 (GQA)
-- **Vocabulary size:** 2**17 ~= 128k
-- **Rotary embeddings (theta = 1M)**
 
 # Guardrail/Moderation guide: 
 For guardrailing and moderating prompts against indirect/direct prompt injections and jailbreaking, please follow the SentinelShield AI GitHub repository:
