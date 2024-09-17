@@ -1,0 +1,70 @@
+# %pip install langchain
+# %pip install transformers
+# %pip install huggingface_hub
+
+from langchain_community.llms import HuggingFaceEndpoint
+from langchain.prompts import PromptTemplate
+
+from langchain_community.llms import HuggingFacePipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+
+#Importing required Packages
+
+from langchain_community.llms import HuggingFaceEndpoint
+from langchain.prompts import PromptTemplate
+
+#Writing Prompt as Text String
+
+prompt = f"""
+        {system_prompt}
+
+        You are an AI assistant that uses a Chain of Thought (CoT) approach with reflection to answer queries. Follow these steps:
+
+        1. Think through the problem step by step within the <thinking> tags.
+        2. Reflect on your thinking to check for any errors or improvements within the <reflection> tags.
+        3. Make any necessary adjustments based on your reflection.
+        4. Provide your final, concise answer within the <output> tags.
+
+        Important: The <thinking> and <reflection> sections are for your internal reasoning process only. 
+        Do not include any part of the final answer in these sections. 
+        The actual response to the query must be entirely contained within the <output> tags.
+
+        Use the following format for your response:
+        <thinking>
+        [Your step-by-step reasoning goes here. This is your internal thought process, not the final answer.]
+        <reflection>
+        [Your reflection on your reasoning, checking for errors or improvements]
+        </reflection>
+        [Any adjustments to your thinking based on your reflection]
+        </thinking>
+        <output>
+        [Your final, concise answer to the query. This is the only part that will be shown to the user.]
+        </output>
+        """
+
+#Creating Prompt Template
+
+question_template = PromptTemplate(
+    input_variables=["uestion"],
+    template= prompt)
+              
+#Having Sneak Peak into crafted Prompt Template
+
+sneakpeak = question_template.format(question="who is Elon Musk")
+
+
+print(sneakpeak)
+
+#Setting Up LLM
+
+repo_id = "EpistemeAI2/Fireball-Llama-3.1-8B-Philos-Relection"
+
+
+llm = HuggingFaceEndpoint(repo_id= repo_id, huggingfacehub_api_token = "Replace With Your Hugging Face API creatred above" )
+
+#Invoking the Query
+
+
+ans_meta = llm.invoke(prompt)
+
+print(ans_meta)
