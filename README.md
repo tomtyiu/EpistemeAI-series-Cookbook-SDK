@@ -4,13 +4,8 @@ Fireball-12B, Fireball-Llama3.1-8B series and others model cookbook
 <img src="https://huggingface.co/EpistemeAI/Fireball-Mistral-Nemo-Base-2407-v1-DPO2/resolve/main/fireball.JPG" width="200"/>
 <a href="https://ko-fi.com/epistemeai">>>Please support and donate<<</a>
 
-# Fireball-12B
-This model is super fine-tune to provide better coding and better response(from first fine-tune) than Llama-3.1-8B and Google Gemma 2 9B. 
-Further fine tuned with ORPO method with dataset 
-- reciperesearch/dolphin-sft-v0.1-preference
-
-# Fireball-Llama3.1-8B
-Model is fine tuned using sft technique.  
+# Agent
+Agentic Llama uses fine-tune Llama 3.1 8B to provide LLM advance mathmatical calculations using langchain.
 
 
 # Guardrail/Moderation guide: 
