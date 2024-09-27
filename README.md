@@ -5,7 +5,7 @@ Fireball-12B, Fireball-Llama3.1-8B series and others model cookbook
 <a href="https://ko-fi.com/epistemeai">>>Please support and donate<<</a>
 
 # Agent
-Agentic Llama uses fine-tune  Llama 3.1 8B with agentic dataset  to provide LLM advance mathmatical calculations using langchain.
+Agentic Llama uses fine-tune  Llama 3.1 8B with agentic dataset  to provide LLM advance mathmatical calculations, search, and finance calculations and graphics using langchain
 
 
 # Guardrail/Moderation guide: 
