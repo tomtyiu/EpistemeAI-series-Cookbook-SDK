@@ -29,6 +29,9 @@ quantization_config = BitsAndBytesConfig(
     bnb_4bit_use_double_quant=True,
 )
 
+# Environment variables
+HF_TOKEN = os.environ.get('HF_TOKEN')  # Ensure token is set
+
 # 2. Create model
 llm = HuggingFacePipeline.from_model_id(
     model_id="EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003",
@@ -56,7 +59,7 @@ prompt = ChatPromptTemplate.from_messages(
 output_parser = StrOutputParser()
 
 chain = prompt | llm | output_parser
-#memory
+
 chat_history_memory = ChatMessageHistory()
 
 chain_with_message_history = RunnableWithMessageHistory(
@@ -74,7 +77,7 @@ def return_response(user_query):
   return response
 
 print("=======================================================================")
-print("Welcome to your own Agent Llama 3.1 8B Search Chatbot")
+print("Welcome to your own Agent Llama 3.1 8B Chatbot")
 print("=======================================================================")
 
 query = ""
@@ -82,3 +85,4 @@ while query != "bye":
   query = input("\033[1m User >>:\033[0m")
   response = return_response(query)
   print(f"\033[1m Chatbot>>:\033[0m {response}")
+     
