@@ -17,6 +17,18 @@ from transformers import pipeline
 # Environment variables
 HF_TOKEN = os.environ.get('HF_TOKEN')  # Ensure token is set
 
+from langchain_community.llms import HuggingFaceEndpoint
+from langchain_community.chat_models.huggingface import ChatHuggingFace
+
+from transformers import BitsAndBytesConfig
+#quantization to 8bit, must have GPU.
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype="float16",
+    bnb_4bit_use_double_quant=True,
+)
+
 # 2. Create model
 llm = HuggingFacePipeline.from_model_id(
     model_id="EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003",
