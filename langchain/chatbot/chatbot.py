@@ -1,3 +1,6 @@
+### Written by Thomas Yiu
+
+
 #!/usr/bin/env python
 from fastapi import FastAPI
 from langchain_core.prompts import ChatPromptTemplate
@@ -41,7 +44,7 @@ prompt = ChatPromptTemplate.from_messages(
 output_parser = StrOutputParser()
 
 chain = prompt | llm | output_parser
-
+#memory
 chat_history_memory = ChatMessageHistory()
 
 chain_with_message_history = RunnableWithMessageHistory(
@@ -59,7 +62,7 @@ def return_response(user_query):
   return response
 
 print("=======================================================================")
-print("Welcome to your own Agent Llama 3.1 8B Chatbot")
+print("Welcome to your own Agent Llama 3.1 8B Search Chatbot")
 print("=======================================================================")
 
 query = ""
