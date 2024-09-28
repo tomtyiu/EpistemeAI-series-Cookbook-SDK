@@ -7,11 +7,11 @@ Fireball-12B, Fireball-Llama3.1-8B series and others model cookbook
 # Agent
 Agentic Llama uses fine-tune  Llama 3.1 8B with agentic dataset  to provide LLM advance mathmatical calculations, search, and finance calculations and graphics using langchain
 
-## Agent_X_P2 - Math Agent
-It can solve calculus, differential and other equations.
+### Agent_X_P2 - Math Agent
+- It can solve calculus, differential and other equations.
 
-## Agent_X_P3 - Stock Agent
-It can provide chart of stokcs i.e nvidia and tsla stock price change YTD
+### Agent_X_P3 - Stock Agent
+- It can provide chart of stokcs i.e nvidia and tsla stock price change YTD
 
 # Guardrail/Moderation guide: 
 For guardrailing and moderating prompts against indirect/direct prompt injections and jailbreaking, please follow the SentinelShield AI GitHub repository:
