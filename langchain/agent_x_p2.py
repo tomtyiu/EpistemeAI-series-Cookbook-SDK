@@ -15,10 +15,6 @@ from google.colab import userdata
 
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = userdata.get('HIF_TOKN')
 
-!pip install --upgrade --quiet  langchain-huggingface text-generation transformers google-search-results numexpr langchainhub sentencepiece jinja2 bitsandbytes accelerate
-
-!pip install langchain_community
-
 from langchain_community.llms import HuggingFaceEndpoint
 from langchain_community.chat_models.huggingface import ChatHuggingFace
 
@@ -75,8 +71,6 @@ messages = [
 
 ai_msg = chat_model.invoke(messages)
 
-!pip install langchain_experimental
-
 from langchain_core.tools import Tool
 from langchain_experimental.utilities import PythonREPL
 
@@ -88,8 +82,6 @@ repl_tool = Tool(
     description="A Python shell. Use this to execute python commands. Input should be a valid python command. If you want to see the output of a value, you should print it out with `print(...)`.",
     func=python_repl.run,
 )
-
-!pip install brave_search
 
 print(ai_msg.content)
 
