@@ -22,7 +22,7 @@ model_id="EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003"
 
 to run charbot:
 ```python
-python chatbot.py
+python Search_chatbot.py
 ```
 
 
