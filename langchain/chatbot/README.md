@@ -20,7 +20,7 @@ Please use model to unlock build-in tooling:
 model_id="EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003"
 ```
 
-to run charbot:
+to run Search Chatbot:
 ```python
 python Search_chatbot.py
 ```
