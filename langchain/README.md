@@ -9,7 +9,7 @@ Install langchain-huggingface, google search and bitsandbytes packages
 ```
 Please use model to unlock build-in tooling: 
 
-'''python
+```python
 model_id="EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003"
 ```
 
