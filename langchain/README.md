@@ -8,7 +8,7 @@ Install langchain-huggingface, google search and bitsandbytes packages
 !pip install --upgrade --quiet  langchain-huggingface text-generation transformers google-search-results numexpr langchainhub sentencepiece jinja2 bitsandbytes accelerate langchain_community
 ```
 
-#please go to https://huggingface.co/ to get HF Token
+please go to https://huggingface.co/ to get HF Token
 
 ```python
 HF_TOKEN = os.environ.get('HF_TOKEN')  # Ensure token is set
