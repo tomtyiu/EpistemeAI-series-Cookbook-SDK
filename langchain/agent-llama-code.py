@@ -20,6 +20,8 @@ repl_tool = Tool(
     description="A Python shell. Use this to execute python commands. Input should be a valid python command. If you want to see the output of a value, you should print it out with `print(...)`.",
     func=python_repl.run,
 )
+
+##For Huggingface inference
 """
 llm = HuggingFacePipeline.from_model_id(
         model_id="EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code",
@@ -35,6 +37,8 @@ llm = HuggingFacePipeline.from_model_id(
     )
 chat_model = ChatHuggingFace(llm=llm)
 """
+
+##For Ollama 
 from langchain_ollama import ChatOllama
 
 llm = ChatOllama(
