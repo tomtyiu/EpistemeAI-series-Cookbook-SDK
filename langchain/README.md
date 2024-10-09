@@ -21,7 +21,8 @@ for more information of [LangServe](https://python.langchain.com/docs/langserve/
 ## Agent-llama.py (Ollama)
 ### please download [Huggingface gguf Q8_0](https://huggingface.co/legolasyiu/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code-Q8_0-GGUF/blob/main/fireball-meta-llama-3.1-8b-instruct-agent-0.003-128k-code-q8_0.gguf)
 ```shell
-ollama run Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code:latest 
+ollama push tomtyiu/fireball-llama-3.1-8b-instruct-agent-128k-code
+ollama run tomtyiu/fireball-llama-3.1-8b-instruct-agent-128k-code
 pip install -U langchain-ollama
 ```
 
