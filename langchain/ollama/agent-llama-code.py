@@ -80,8 +80,8 @@ def chatbot(query):
         write only the code. do not print anything else.\n
         use ipython for search tool. \n
         debug code if error occurs. \n
-        if no error, please provide no code
-        if error, fix the code and provide the code
+        if no error, please provide no code. \n
+        if error, refactor and fix the code and provide the code.
         """
         ),
         HumanMessage(
