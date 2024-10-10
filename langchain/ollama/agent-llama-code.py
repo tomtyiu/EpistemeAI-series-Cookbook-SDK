@@ -73,7 +73,7 @@ def chatbot(query):
     messages_2 = [
         SystemMessage(content=
         """
-        Environment: ipython. Tools: brave_search, wolfram_alpha. Cutting Knowledge Date: December 2023. Today Date: 24 Auguest 2024\n
+        Environment: ipython. Tools: brave_search, wolfram_alpha. Cutting Knowledge Date: December 2023. Today Date: 4 October 2024\n
         You are a debug assistant. find bugs and fix the bugs\n
         Ensure any code you provide can be executed \n
         with all required imports and variables defined. List the imports.  Structure your answer with a description of the code solution. \n
