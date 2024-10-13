@@ -1,0 +1,15 @@
+curl "https://kpu92bguf2t8bjdg.us-east-1.aws.endpoints.huggingface.cloud/v1/chat/completions" \
+-X POST \
+-H "Authorization: Bearer hf_XXXXX" \
+-H "Content-Type: application/json" \
+-d '{
+    "model": "tgi",
+    "messages": [
+        {
+            "role": "user",
+            "content": "What is deep learning?"
+        }
+    ],
+    "max_tokens": 150,
+    "stream": true
+}'
