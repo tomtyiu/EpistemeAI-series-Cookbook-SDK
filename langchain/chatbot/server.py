@@ -45,7 +45,43 @@ from langchain_huggingface import ChatHuggingFace, HuggingFacePipeline
 
 
 llm = HuggingFacePipeline.from_model_id(
-    model_id="EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003",
+    model_id="import transformers
+import torch
+from langchain_community.llms import HuggingFaceEndpoint
+from langchain_community.chat_models.huggingface import ChatHuggingFace
+
+from transformers import BitsAndBytesConfig
+
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype="float16",
+    bnb_4bit_use_double_quant=True,
+)
+
+model_id = "EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code-ds-auto"
+pipeline = transformers.pipeline(
+    "text-generation",
+    model=model_id,
+    model_kwargs={"quantization_config": quantization_config}, #for fast response. For full 16bit inference, remove this code.
+    device_map="auto",
+)
+messages = [
+    {"role": "system", "content":  """
+    Environment: ipython. Tools: brave_search, wolfram_alpha. Cutting Knowledge Date: December 2023. Today Date: 4 October 2024\n
+    You are a coding assistant with expert with everything\n
+    Ensure any code you provide can be executed \n
+    with all required imports and variables defined. List the imports.  Structure your answer with a description of the code solution. \n
+    write only the code. do not print anything else.\n
+    debug code if error occurs. \n
+    ### Question: {}\n
+    ### Answer: {} \n
+    """},
+    {"role": "user", "content": "Train an AI model to predict the number of purchases made per customer in a given store."}
+]
+outputs = pipeline(messages, max_new_tokens=128, do_sample=True, temperature=0.01, top_k=100, top_p=0.95)
+print(outputs[0]["generated_text"][-1])
+",
     task="text-generation",
     pipeline_kwargs=dict(
         max_new_tokens=512,
