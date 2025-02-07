@@ -1,4 +1,4 @@
-# Fireball-series
+# EpistemeAI-series
 Fireball-12B, Fireball-Llama3.1-8B series and others model cookbook
 
 <img src="https://huggingface.co/EpistemeAI/Fireball-Mistral-Nemo-Base-2407-v1-DPO2/resolve/main/fireball.JPG" width="200"/>
