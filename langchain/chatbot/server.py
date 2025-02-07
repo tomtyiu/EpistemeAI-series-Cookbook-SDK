@@ -59,7 +59,7 @@ quantization_config = BitsAndBytesConfig(
     bnb_4bit_use_double_quant=True,
 )
 
-model_id = "EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code-ds-auto"
+model_id = "EpistemeAI/ReasoningCore-3B-0"
 pipeline = transformers.pipeline(
     "text-generation",
     model=model_id,
