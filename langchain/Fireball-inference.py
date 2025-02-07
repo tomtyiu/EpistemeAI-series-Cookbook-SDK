@@ -1,7 +1,7 @@
 from langchain_huggingface import HuggingFacePipeline
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
-model_id = "EpistemeAI/Fireball-12B"
+model_id = "EpistemeAI/ReasoningCore-3B-0"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(model_id)
 pipe = pipeline(
