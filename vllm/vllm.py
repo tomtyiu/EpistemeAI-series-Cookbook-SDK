@@ -2,13 +2,13 @@
 # pip install vllm
 
 # Load and run the model:
-vllm serve "EpistemeAI2/Fireball-Alpaca-Llama-3.1-8B-Instruct-KTO-beta"
+vllm serve "EpistemeAI/ReasoningCore-3B-0"
 
 # Call the server using curl:
 curl -X POST "http://localhost:8000/v1/chat/completions" \ 
 	-H "Content-Type: application/json" \ 
 	--data '{
-		"model": "EpistemeAI2/Fireball-Alpaca-Llama-3.1-8B-Instruct-KTO-beta"
+		"model": "EpistemeAI/ReasoningCore-3B-0"
 		"messages": [
 			{"role": "user", "content": "Hello!"}
 		]
@@ -27,13 +27,13 @@ docker run --runtime nvidia --gpus all \
 
 Copy
 # Load and run the model:
-docker exec -it my_vllm_container bash -c "vllm serve EpistemeAI2/Fireball-Alpaca-Llama-3.1-8B-Instruct-KTO-beta"
+docker exec -it my_vllm_container bash -c "vllm serve EpistemeAI/ReasoningCore-3B-0"
 
 # Call the server using curl:
 curl -X POST "http://localhost:8000/v1/chat/completions" \ 
 	-H "Content-Type: application/json" \ 
 	--data '{
-		"model": "EpistemeAI2/Fireball-Alpaca-Llama-3.1-8B-Instruct-KTO-beta"
+		"model": "EpistemeAI/ReasoningCore-3B-0"
 		"messages": [
 			{"role": "user", "content": "Hello!"}
 		]
