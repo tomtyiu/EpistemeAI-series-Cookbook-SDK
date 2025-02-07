@@ -48,7 +48,7 @@ quantization_config = BitsAndBytesConfig(
     bnb_4bit_use_double_quant=True,
 )
 
-model_id = "EpistemeAI/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code-ds-auto"
+model_id = "EpistemeAI/ReasoningCore-3B-0" #Reasoning Search
 pipeline = transformers.pipeline(
     "text-generation",
     model=model_id,
@@ -113,7 +113,7 @@ def return_response(user_query):
   return response
 
 print("=======================================================================")
-print("Welcome to your own Agent Llama 3.1 8B Chatbot")
+print("Welcome to your own Agent Search Reasoning Bot")
 print("=======================================================================")
 
 query = ""
