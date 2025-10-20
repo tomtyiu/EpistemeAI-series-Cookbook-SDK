@@ -5,7 +5,11 @@ Reasoning models,fireball-12B, Fireball-Llama3.1-8B series and others model cook
 <a href="https://ko-fi.com/epistemeai">>>Please support and donate<<</a>
 
 # Quick installation guide
-Please follow the quick installation guide 
+Please follow the quick installation guide for EpistemeAI gpt oss 20b and VibeCoder
+Lists of Models:
+- EpistemeAI/VibeCoder-20b-RL1_0
+- EpistemeAI/VCoder-120b-1.0
+- EpistemeAI/Episteme-gptoss-20b-RL
 - [Quick installation Guide](https://github.com/tomtyiu/EpistemeAI-series-Cookbook-SDK/blob/main/EpistemeAI_gps_oss_20b_RL_quick_start_guide.ipynb)
 
 
