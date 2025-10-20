@@ -18,15 +18,19 @@ for more information of [LangServe](https://python.langchain.com/docs/langserve/
 !pip install langchain_community
 ```
 
-## Agent-llama.py (Ollama)
-### please download [Huggingface gguf Q8_0](https://huggingface.co/legolasyiu/Fireball-Meta-Llama-3.1-8B-Instruct-Agent-0.003-128K-code-Q8_0-GGUF/blob/main/fireball-meta-llama-3.1-8b-instruct-agent-0.003-128k-code-q8_0.gguf)
-```shell
-ollama push tomtyiu/fireball-llama-3.1-8b-instruct-agent-128k-code
-ollama run tomtyiu/fireball-llama-3.1-8b-instruct-agent-128k-code
-pip install -U langchain-ollama
-```
 
 
 ```shell
 pip install langchain-ollama
+```
+ 
+## Latest models:
+**Episteme-gptoss-20b-RL** model
+```shell
+ollama run hf.co/mradermacher/Episteme-gptoss-20b-RL-GGUF:MXFP4_MOE
+```
+
+**VibeCoder-20b-RL1_0** model
+```shell
+ollama run hf.co/mradermacher/VibeCoder-20b-RL1_0-GGUF:Q8_0
 ```
