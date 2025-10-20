@@ -6,6 +6,8 @@ Reasoning models,fireball-12B, Fireball-Llama3.1-8B series and others model cook
 
 # Quick installation guide
 Please follow the quick installation guide 
+- [Quick installation Guide)(https://github.com/tomtyiu/EpistemeAI-series-Cookbook-SDK/blob/main/EpistemeAI_gps_oss_20b_RL_quick_start_guide.ipynb)
+
 
 # programming languages
 
