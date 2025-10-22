@@ -82,7 +82,7 @@ Use this to run an internet search for a given query. You can specify the max nu
     
     # Initialize LLM
     llm = HuggingFacePipeline.from_model_id(
-        model_id="EpistemeAI/VibeCoder-20b-RL1_0",
+        model_id="EpistemeAI/Episteme-gptoss-20b-RL",
         task="text-generation",
         device_map="cuda",
         pipeline_kwargs=dict(
