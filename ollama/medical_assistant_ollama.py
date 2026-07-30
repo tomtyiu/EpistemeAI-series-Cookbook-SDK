@@ -33,7 +33,7 @@ def chatbot(input_user):
 
 # Welcome message and main loop
 print("=======================================================================")
-print("Welcome to your own Agent Llama 3.1 8B Code Chatbot")
+print("Welcome to your own Agent Medical Reasoning 27B Code Chatbot")
 print("=======================================================================")
 
 query = ""
